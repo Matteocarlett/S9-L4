@@ -9,8 +9,8 @@
 }
 
 .jumbotron.hovered h1 {
-  transform: scale(1.4); /* Puoi regolare la scala come preferisci */
-  transition: transform 0.4s ease; /* Durata e tipo di transizione */
+  transform: scale(1.4); 
+  transition: transform 0.4s ease; 
 }
 
 #carta{
@@ -18,8 +18,8 @@
 }
 
 .jumbotron.hovered h1, .card.hovered {
-  transform: scale(1.4); /* Puoi regolare la scala come preferisci */
-  transition: transform 0.4s ease; /* Durata e tipo di transizione */
+  transform: scale(1.4); 
+  transition: transform 0.4s ease; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -51,3 +51,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+#carta {
+  transition: transform 0.3s;
+}
+
+#carta:hover {
+  transform: scale(1.1);
+}
+
+.lead {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
